@@ -2,14 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
     <title>Reviews Hub</title>
 </head>
 <body>
-    <header>
-        <img src="imagenes/LogoPagina.png" alt="Logo Sitio Web De Reseñas"height="250px">
+    <header class="header">
+        <img src="imagenes/LogoPagina.png" alt="Logo Sitio Web De Reseñas" class="logo">
         <span> Donde cada reseña tiene su encanto</span>
-        <nav>
+        <nav class="navegacion">
             <ul>
                 <li><a href="index.html">Home Pagina Princiapl</a></li>
                 <li><a href="../web/paginas/libros.html">Pagina Libros</a></li>
@@ -18,16 +19,19 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Todos somos uno y uno somos todos</h2>
-        <img src="imagenes/imagen1.jpg" alt="Personas Conversando">
-    </section>
-    <div>
-        <aside>
-            <h2>Aqui vas a encontrar:</h2>
-            <nav>
-                <ul>
-                    <li>ienvenido a Con Sabor a Opinión</li>
+
+    <main class="contenido-principal">
+
+        <section class="seccion-contenido hero-centrado">
+            <h1 class="titulo-hero">Todos somos uno y uno somos todos</h1>
+            <img src="imagenes/imagen1.jpg" alt="Personas conversando" class="imagen-hero">
+        </section>
+
+        <div class="seccion-flexible">
+            <aside class="lateral-contenido">
+                <h2 class="titulo-lateral">Aquí vas a encontrar:</h2>
+                <ul class="lista-lateral">
+                    <li>Bienvenido a Con Sabor a Opinión</li>
                     <li>¿Por qué son importantes las reseñas?</li>
                     <li>Nuestra Filosofía</li>
                     <li>Cómo escribir tu propia reseña</li>
@@ -35,115 +39,154 @@
                     <li>¿Qué hace que una crítica sea constructiva?</li>
                     <li>El rol cultural de las reseñas</li>
                 </ul>
-            </nav>
-        </aside>
-        <aside>
-            <H2>Redews Sociales</H2>
-            <nav>
-                <ul>
-                    <li>Facebook</li>
-                    <li>Instragram</li>
-                    <li>Tiktok</li>
-                    <li>Twitter</li>
-                    <li>Youtube</li>
+                <h2 class="titulo-lateral">Redes Sociales</h2>
+                <ul class="lista-lateral redes-sociales-lista">
+                    <li><img src="imagenes/icono1.png" alt="icono de facebook" class="icono-red-social"> Facebook</li>
+                    <li><img src="imagenes/icono2.png" alt="icono de instagram" class="icono-red-social"> Instagram</li>
+                    <li><img src="imagenes/icono3.png" alt="icono de tiktok" class="icono-red-social"> TikTok</li>
+                    <li><img src="imagenes/icono4.png" alt="icono de twitter" class="icono-red-social"> Twitter</li>
+                    <li><img src="imagenes/icono5.png" alt="icono de youtube" class="icono-red-social"> YouTube</li>
                 </ul>
-            </nav>
-        </aside>
-    </div>
-    <div>
-         <aside>
-            <h2>¿Jugaste alguno de estos juegos?</h2>
-                <img src="imagenes/imagen17.jpg" alt="Portada de un videojuego">
-                <img src="imagenes/imagen18.jpg" alt="Portada de un videojuego">
-                <img src="imagenes/imagen19.jpg" alt="Portada de un videojuego">
-        </aside>
-        <aside>
-        <h2>¿Vas a ver alguna de estas películas?</h2>
-            <img src="imagenes/imagen20.jpg" alt="Portada de una pelicula">
-            <img src="imagenes/imagen21.jpg" alt="Portada de una pelicula">
-            <img src="imagenes/imagen22.jpg" alt="Portada de una pelicula">
-        </aside>
-        <aside>
-            <h2>¿Leíste alguno de estos libros?</h2>
-                <img src="imagenes/imagen23.jpg" alt="Portada de un libro">
-                <img src="imagenes/imagen24.jpg" alt="Portada de un libro">
-                <img src="imagenes/imagen25.jpg" alt="Portada de un libro">
-        </aside>
-    </div>
-    <div>
-        <section>
-            <h2>Bienvenido a Con Sabor a Opinión</h2>
-            <p>Bienvenido a Con Sabor a Opinión, un espacio creado para quienes creen que cada experiencia merece ser contada. Aquí no solo se trata de calificar, sino de compartir. Opinamos con criterio, emoción y una pizca de estilo propio. Porque detrás de cada libro, película o videojuego hay un mundo que vale la pena descubrir… y comentar.</p>
-            <p>¿Buscas una guía sincera? ¿Te encanta leer opiniones que no suenan todas igual? Entonces estás en casa.</p>
-            <img src="imagenes/imagen6.jpg" alt="imagen de bienvenida">
+            </aside>
+
+            <div class="flex-principal">
+                <section class="seccion-contenido galeria">
+                    <h2 class="titulo-seccion">¿Jugaste alguno de estos juegos?</h2>
+                    <div class="galeria-contenido">
+                        <img src="imagenes/imagen17.jpg" alt="Portada videojuego 1" class="imagen-libro">
+                        <img src="imagenes/imagen18.jpg" alt="Portada videojuego 2" class="imagen-libro">
+                        <img src="imagenes/imagen19.jpg" alt="Portada videojuego 3" class="imagen-libro">
+                    </div>
+                </section>
+                <section class="seccion-contenido galeria">
+                    <h2 class="titulo-seccion">¿Vas a ver alguna de estas películas?</h2>
+                    <div class="galeria-contenido">
+                        <img src="imagenes/imagen20.jpg" alt="Portada película 1" class="imagen-libro">
+                        <img src="imagenes/imagen21.jpg" alt="Portada película 2" class="imagen-libro">
+                        <img src="imagenes/imagen22.jpg" alt="Portada película 3" class="imagen-libro">
+                    </div>
+                </section>
+                <section class="seccion-contenido galeria">
+                    <h2 class="titulo-seccion">¿Leíste alguno de estos libros?</h2>
+                    <div class="galeria-contenido">
+                        <img src="imagenes/imagen23.jpg" alt="Portada libro 1" class="imagen-libro">
+                        <img src="imagenes/imagen24.jpg" alt="Portada libro 2" class="imagen-libro">
+                        <img src="imagenes/imagen25.jpg" alt="Portada libro 3" class="imagen-libro">
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <section class="seccion-flex-resenas">
+            <div class="columna-resena">
+                <section class="seccion-contenido">
+                    <h2 class="titulo-seccion">Cómo escribir tu propia reseña</h2>
+                    <p>El primer paso para escribir una buena reseña es observar y analizar con atención. No basta con decir “me gustó” o “me aburrió”, hay que explicar por qué. Describe brevemente la obra, evitando spoilers, y luego comenta sus elementos más importantes: historia, estilo, personajes, ambientación, música, jugabilidad, etc., dependiendo del tipo de contenido. Usa ejemplos claros y organiza bien tus ideas.</p>
+                    <p>Después, añade tu experiencia personal. ¿Qué te dejó esa obra? ¿A quién se la recomendarías? ¿Qué momento o mensaje te impactó más? Tu voz es lo que diferencia tu reseña de cualquier otra. Escribir reseñas no es solo opinar: es invitar a otros a mirar con tus ojos, ayudarlos a decidir, y a veces, hasta a emocionarse con lo que tú viste.</p>
+                </section>
+            </div>
+            <div class="columna-resena">
+                <section class="seccion-contenido">
+                    <h2 class="titulo-seccion">Objetividad vs. subjetividad en las reseñas</h2>
+                    <p>Una reseña combina dos elementos clave: lo objetivo y lo subjetivo. La parte objetiva se enfoca en aspectos verificables como la calidad técnica, el desarrollo narrativo, la estructura, el diseño visual o el nivel de dificultad. Esta mirada permite ofrecer una evaluación que cualquier lector o espectador pueda contrastar con la realidad de la obra, independientemente del gusto personal.</p>
+                    <p>Por otro lado, la subjetividad es lo que da vida y autenticidad a la reseña. Hablar de lo que te hizo sentir una historia, cómo te conectaste con un personaje o qué reflexión te dejó un juego, convierte la reseña en una experiencia compartida. Ambas dimensiones no se contradicen, sino que se complementan: la objetividad da fundamento, y la subjetividad aporta humanidad.</p>
+                </section>
+            </div>
         </section>
-    </div>
-    <div>
-        <section>
-            <img src="imagenes/imagen7.jpg" alt="la opinion de la gemte">
-            <h2> ¿Por qué son importantes las reseñas?</h2>
-            <p>Las reseñas son brújulas culturales. Nos ayudan a elegir mejor, a descubrir lo inesperado y a evitar decepciones. Pero también son una forma de compartir vivencias, de construir comunidad y de dejar huella.Aquí no vendemos opiniones. Las sentimos, las pensamos y luego las contamos. Porque una buena reseña no es solo una calificación, es una conversación que sigue viva.</p>
+
+        <section class="seccion-contenido importancia">
+            <div class="seccion-flex-texto-imagen">
+                <div class="texto-izquierda">
+                    <h2 class="titulo-seccion">Bienvenido a Con Sabor a Opinión</h2>
+                    <p>Bienvenido a Con Sabor a Opinión, un espacio creado para quienes creen que cada experiencia merece ser contada. Aquí no solo se trata de calificar, sino de compartir. Opinamos con criterio, emoción y una pizca de estilo propio. Porque detrás de cada libro, película o videojuego hay un mundo que vale la pena descubrir… y comentar.</p>
+                    <p>¿Buscas una guía sincera? ¿Te encanta leer opiniones que no suenan todas igual? Entonces estás en casa.</p>
+                </div>
+                <div class="imagen-derecha">
+                    <img src="imagenes/imagen6.jpg" alt="Imagen de bienvenida" class="imagen-seccion">
+                </div>
+            </div>
         </section>
-    </div>
-    <div>
-        <section>
-            <h2>Nuestra Filosofía</h2>
-            <p>No nos mueve la moda ni la polémica vacía. En Con Sabor a Opinión, apostamos por reseñas sinceras, bien escritas y con una perspectiva humana.Cada crítica está pensada para conectar, no para imponer. Leemos entre líneas, vemos más allá del tráiler y jugamos con el corazón.</p>
-            <p>Porque opinar no es gritar más fuerte: es decir algo que valga la pena ser escuchado.</p>
-            <img src="imagenes/imagen8.jpg" alt="igamen de la filosofia">
+
+        <section class="seccion-contenido importancia">
+            <div class="seccion-flex-texto-imagen">
+                <div class="imagen-derecha">
+                    <img src="imagenes/imagen7.jpg" alt="Opinión de la gente" class="imagen-seccion">
+                </div>
+                <div class="texto-izquierda">
+                    <h2 class="titulo-seccion">¿Por qué son importantes las reseñas?</h2>
+                    <p>Las reseñas son brújulas culturales. Nos ayudan a elegir mejor, a descubrir lo inesperado y a evitar decepciones. Pero también son una forma de compartir vivencias, de construir comunidad y de dejar huella. Aquí no vendemos opiniones. Las sentimos, las pensamos y luego las contamos. Porque una buena reseña no es solo una calificación, es una conversación que sigue viva.</p>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Cómo escribir tu propia reseña</h2>
-            <p>El primer paso para escribir una buena reseña es observar y analizar con atención. No basta con decir “me gustó” o “me aburrió”, hay que explicar por qué. Describe brevemente la obra, evitando spoilers, y luego comenta sus elementos más importantes: historia, estilo, personajes, ambientación, música, jugabilidad, etc., dependiendo del tipo de contenido. Usa ejemplos claros y organiza bien tus ideas.</p>
-            <p>Después, añade tu experiencia personal. ¿Qué te dejó esa obra? ¿A quién se la recomendarías? ¿Qué momento o mensaje te impactó más? Tu voz es lo que diferencia tu reseña de cualquier otra. Escribir reseñas no es solo opinar: es invitar a otros a mirar con tus ojos, ayudarlos a decidir, y a veces, hasta a emocionarse con lo que tú viste.</p>
+
+        <section class="seccion-contenido importancia">
+            <div class="seccion-flex-texto-imagen">
+                <div class="texto-izquierda">
+                    <h2 class="titulo-seccion">Nuestra Filosofía</h2>
+                    <p>No nos mueve la moda ni la polémica vacía. En Con Sabor a Opinión, apostamos por reseñas sinceras, bien escritas y con una perspectiva humana. Cada crítica está pensada para conectar, no para imponer. Leemos entre líneas, vemos más allá del tráiler y jugamos con el corazón.</p>
+                    <p>Porque opinar no es gritar más fuerte: es decir algo que valga la pena ser escuchado.</p>
+                </div>
+                <div class="imagen-derecha">
+                    <img src="imagenes/imagen8.jpg" alt="Imagen de la filosofía" class="imagen-seccion">
+                </div>
+            </div>
         </section>
-        <section>
-            <h2> Objetividad vs. subjetividad en las reseñas</h2>
-            <p>Una reseña combina dos elementos clave: lo objetivo y lo subjetivo. La parte objetiva se enfoca en aspectos verificables como la calidad técnica, el desarrollo narrativo, la estructura, el diseño visual o el nivel de dificultad. Esta mirada permite ofrecer una evaluación que cualquier lector o espectador pueda contrastar con la realidad de la obra, independientemente del gusto personal.</p>
-            <p>Por otro lado, la subjetividad es lo que da vida y autenticidad a la reseña. Hablar de lo que te hizo sentir una historia, cómo te conectaste con un personaje o qué reflexión te dejó un juego, convierte la reseña en una experiencia compartida. Ambas dimensiones no se contradicen, sino que se complementan: la objetividad da fundamento, y la subjetividad aporta humanidad.</p>
+
+        <section class="seccion-contenido galeria">
+            <h2 class="titulo-seccion frase-centrada">“Que cada reseña encienda tu curiosidad y alimente tu pasión.”</h2>
         </section>
-    </div>
-    <section>
-        <h2>Que cada reseña encienda tu curiosidad y alimente tu pasión.”</h2>
-    </section>
-    <section>
-        <h2>El compartir información es saber</h2>
-        <img src="imagenes/imagen15.jpg" alt="grupo de personas motivadas">
-        <img src="imagenes/imagen16.jpg" alt="una persona saltando de felicidad">
-    </section>
-    <article>
-        <h1>Cómo escribir una reseña que conecte</h1>
-        <p>Escribir una reseña no es solo contar si algo nos gustó o no. Es compartir una experiencia de forma que otros puedan sentirse identificados, intrigados o incluso desafiados a pensar distinto.</p>
-        <img src="imagenes/imagen9.jpg" alt="palabras relacionadas a reseñas">
-        <p>Una buena reseña va más allá de los gustos personales. Empieza por situar al lector: ¿qué tipo de obra es?, ¿a qué público va dirigida?, ¿por qué te llamó la atención? Luego, se construye una opinión con argumentos, no solo con frases como “me encantó” o “fue aburrido”. Explicar el por qué es lo que marca la diferencia.Evitar spoilers es una regla de oro. No arruines giros ni revelaciones clave, pero sí puedes hablar de cómo te hicieron sentir o qué impacto tuvieron. El objetivo no es contar la historia, sino contar cómo viviste esa historia.</p>
-    </article>
-    <article>
-        <img src="imagenes/imagen10.png" alt="personas compartiendo opiniones">
-        <h1>¿Qué hace que una crítica sea constructiva?</h1>
-        <p>Opinar no es atacar: es aportar</p>
-        <p>Hoy, en redes sociales, todos tenemos una opinión. Pero no todas las opiniones son útiles, y muchas veces la línea entre crítica y agresión se borra. Una crítica constructiva no busca herir ni destruir, sino señalar aspectos que podrían mejorar y resaltar lo que ya está bien hecho.</p>
-        La diferencia está en el enfoque y la intención. Una reseña constructiva no dice “este libro es malo”, sino “este libro me pareció débil en tal aspecto, aunque rescato esto otro”. Parte de un análisis equilibrado, fundamentado y respetuoso.Además, es importante recordar que detrás de cada obra hay trabajo humano. Criticar con respeto no significa ser indulgente, pero sí tener la empatía suficiente para que nuestras palabras aporten a la conversación y no cierren el diálogo.
-    </article>
-    <article>
-        <h1>El rol cultural de las reseñas</h1>
-        <p>Cuando opinar también es hacer historia</p>
-        <p>Las reseñas no son solo contenido de paso. Aunque muchas veces las leemos antes de decidir qué ver o leer, su valor va mucho más allá. Las reseñas documentan momentos culturales, registran cómo sentimos y pensamos frente a una obra en una época específica.</p>
-        <p>Una reseña escrita hoy sobre una película, un libro o un videojuego se convierte en un reflejo del contexto social, político y emocional del momento. Por eso, reseñar también es participar en la historia de la cultura.</p>
-        <p>Además, las reseñas generan conversación. A veces cambian la percepción de una obra con el tiempo, permiten redescubrir clásicos olvidados o visibilizar joyas ocultas. En ese sentido, quien escribe reseñas es también un curador cultural: selecciona, valora y ofrece puntos de entrada a mundos que otros aún no conocen.</p>
-        <img src="imagenes/imagen11.jpg" alt="representa diversidad cultural">
-    </article>
-    <section>
-        <h2>Una comunidad unida</h2>
-        <img src="imagenes/imagen12.jpg" alt="arbol de linros">
-        <img src="imagenes/imagen13.jpg" alt="representa el cine">
-        <img src="imagenes/imagen14.png" alt="mandos de videojuegos">
-    </section>
-    <footer>
-        <img src="imagenes/icono1.png" alt="incono de facebook">
-        <img src="imagenes/icono2.png" alt="icono de instagram">
-        <img src="imagenes/icono3.png" alt="icono de tiktok">
-        <img src="imagenes/icono4.png" alt="icono de twitter">
-        <img src="imagenes/icono5.png" alt="icono de youtube">
+
+        <section class="seccion-contenido galeria">
+            <h2 class="titulo-seccion">El compartir información es saber</h2>
+            <div class="galeria-contenido">
+                <img src="imagenes/imagen15.jpg" alt="Grupo de personas motivadas" class="imagen-libro">
+                <img src="imagenes/imagen16.jpg" alt="Persona saltando de felicidad" class="imagen-libro">
+            </div>
+        </section>
+
+        <section class="seccion-contenido galeria">
+            <h2 class="titulo-seccion">Una comunidad unida</h2>
+            <div class="galeria-contenido">
+                <img src="imagenes/imagen12.jpg" alt="Árbol de libros" class="imagen-libro">
+                <img src="imagenes/imagen13.jpg" alt="Representación del cine" class="imagen-libro">
+                <img src="imagenes/imagen14.png" alt="Mandos de videojuegos" class="imagen-libro">
+            </div>
+        </section>
+
+        <section class="articulos-principal">
+            <article class="articulo">
+                <h1>Cómo escribir una reseña que conecte</h1>
+                <p>Escribir una reseña no es solo contar si algo nos gustó o no. Es compartir una experiencia de forma que otros puedan sentirse identificados, intrigados o incluso desafiados a pensar distinto.</p>
+                <img src="imagenes/imagen9.jpg" alt="Palabras relacionadas a reseñas" class="imagen-seccion">
+                <p>Una buena reseña va más allá de los gustos personales. Empieza por situar al lector: ¿qué tipo de obra es?, ¿a qué público va dirigida?, ¿por qué te llamó la atención? Luego, se construye una opinión con argumentos, no solo con frases como “me encantó” o “fue aburrido”. Explicar el por qué es lo que marca la diferencia. Evitar spoilers es una regla de oro. No arruines giros ni revelaciones clave, pero sí puedes hablar de cómo te hicieron sentir o qué impacto tuvieron. El objetivo no es contar la historia, sino contar cómo viviste esa historia.</p>
+            </article>
+
+            <article class="articulo">
+                <img src="imagenes/imagen10.png" alt="Personas compartiendo opiniones" class="imagen-seccion">
+                <h1>¿Qué hace que una crítica sea constructiva?</h1>
+                <p>Opinar no es atacar: es aportar.</p>
+                <p>Hoy, en redes sociales, todos tenemos una opinión. Pero no todas las opiniones son útiles, y muchas veces la línea entre crítica y agresión se borra. Una crítica constructiva no busca herir ni destruir, sino señalar aspectos que podrían mejorar y resaltar lo que ya está bien hecho.</p>
+            </article>
+
+            <article class="articulo">
+                <h1>El rol cultural de las reseñas</h1>
+                <p>Cuando opinar también es hacer historia.</p>
+                <p>Las reseñas no son solo contenido de paso. Aunque muchas veces las leemos antes de decidir qué ver o leer, su valor va mucho más allá. Las reseñas documentan momentos culturales, registran cómo sentimos y pensamos frente a una obra en una época específica.</p>
+                <p>Una reseña escrita hoy sobre una película, un libro o un videojuego se convierte en un reflejo del contexto social, político y emocional del momento. Por eso, reseñar también es participar en la historia de la cultura.</p>
+                <p>Además, las reseñas generan conversación. A veces cambian la percepción de una obra con el tiempo, permiten redescubrir clásicos olvidados o visibilizar joyas ocultas. En ese sentido, quien escribe reseñas es también un curador cultural: selecciona, valora y ofrece puntos de entrada a mundos que otros aún no conocen.</p>
+                <img src="imagenes/imagen11.jpg" alt="Diversidad cultural" class="imagen-seccion">
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-redes">
+            <img src="imagenes/icono1.png" alt="icono de facebook" class="icono-red-social">
+            <img src="imagenes/icono2.png" alt="icono de instagram" class="icono-red-social">
+            <img src="imagenes/icono3.png" alt="icono de tiktok" class="icono-red-social">
+            <img src="imagenes/icono4.png" alt="icono de twitter" class="icono-red-social">
+            <img src="imagenes/icono5.png" alt="icono de youtube" class="icono-red-social">
+        </div>
         <p>© 2024 Con Sabor a Opinión. Todos los derechos reservados.</p>
     </footer>
 </body>
